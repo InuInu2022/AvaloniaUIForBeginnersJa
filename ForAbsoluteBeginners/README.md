@@ -1,4 +1,6 @@
-# Avalonia UI 超入門 : SampleApp
+# Avalonia UI 超入門
+
+## SampleApp
 
 ```cmd: 最初の一回
 dotnet new install Avalonia.Templates
@@ -23,6 +25,8 @@ SampleApp
 
 - `app.manifest`はなくても動きます
 
+## 参考比較:WPFのテンプレ
+
 ```txt:WPFのテンプレで作った場合の比較
 SampleWPF
 ├obj	#無視
@@ -35,3 +39,26 @@ SampleWPF
 ```
 
 - `AssemblyInfo.cs`はなくても動きます
+
+## SampleXPlatApp
+
+```cmd: テンプレから作る
+dotnet new avalonia.xplat -o SampleXPlatApp
+```
+
+```txt:
+SampleXPlatApp
+├─SampleXPlatApp
+│  ├─Assets
+│  ├─ViewModels
+│  └─Views
+├─SampleXPlatApp.Android
+│  ├─Properties
+│  └─Resources
+├─SampleXPlatApp.Browser
+│  ├─Properties
+│  └─wwwroot
+├─SampleXPlatApp.Desktop
+└─SampleXPlatApp.iOS
+    └─Resources
+```
